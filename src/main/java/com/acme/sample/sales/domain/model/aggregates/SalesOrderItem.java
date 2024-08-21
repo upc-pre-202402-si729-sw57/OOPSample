@@ -33,6 +33,14 @@ public class SalesOrderItem {
         this.dispatched = true;
     }
 
+    public UUID getItemId() {
+        return itemId;
+    }
+
+    public Long getProductId() {
+        return productId;
+    }
+
     private static UUID generateItemId() {
         return UUID.randomUUID();
     }
